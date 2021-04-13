@@ -17,4 +17,6 @@ print(f"\nTHe name of the users that love programming are:")
 for name in favorite_language.keys():
     print(name.title())
 
+if 'erin' not in favorite_language.keys():
+    print("Erin, please take our poll")
 #comment to try git
