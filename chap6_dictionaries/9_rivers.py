@@ -15,4 +15,4 @@ for country in rivers.values():
 print(f"\nAnd these is how these rever match with a specific country\n")
 
 for river, country in rivers.items():
-    print(f"\nThe {river} runs through {country}")
+    print(f"\nThe {river} runs through {country}")pr
