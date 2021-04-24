@@ -1,4 +1,4 @@
-alien = []
+aliens = []
 
 #make 30 green aliens
 for alien_number in range(30):
@@ -11,5 +11,5 @@ print("...")
 
 #show how many aliens have been created
 print(f"Total number of aliens: {len(aliens)}")
-#comment
+
 
