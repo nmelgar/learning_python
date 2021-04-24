@@ -4,6 +4,12 @@ glossary = {
     'lists': 'collection of data',
     'method': 'an action python can perform on a piece of data',
     'strings': 'text inside double or single quotes',
+    #add 5 more terms as part of the activity
+    'equality sign': 'looks like this ==',
+    'inequality sign': 'looks like this !=',
+    'using AND': 'multiple conditions must to be true',
+    'using OR': 'one of the conditions must be true',
+    'using NOT': 'if something is not',
 }
 
 #before knowing how to loop a dictionary
