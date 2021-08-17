@@ -6,12 +6,9 @@ favorite_language = {
     'phil': ['ruby', 'python'],
 }
 
-
-
 #use the singular version without lists inside the dictionary
 #for name, language in favorite_language.items():
 #    print(f"{name.title()}'s favorite language is {language.title()}.")
-
 for name, languages in favorite_language.items():
     print(f"{name.title()}'s favorite language are:")
     for language in languages:
