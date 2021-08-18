@@ -1,3 +1,6 @@
+#verificar si un número es multiplo , osea divisible
+#de 10 o entre 10
+
 number = input("Enter a number and I will tell you if it is a multiple of 10 or not: ")
 number = int(number)
 
