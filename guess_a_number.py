@@ -3,14 +3,14 @@ import random
 
 print("Welcome to guess the number game!")
 while (True):
-    users_number = int(input("Choose a number between 1 and 9  "))
+    users_number = int(input("Choose a number between 1 and 9:  "))
     print("You chose: " + str(users_number))
 
     computers_number = random.randint(1 ,9)
     print("Computer chose: " + str(computers_number))
 
     if (users_number == computers_number):
-        print("Congratulations, you guessed the number!!")
+        print("\nCongratulations, you guessed the number!!")
         break
     else:
-        print("Try again!")
+        print("\nTry again!")
