@@ -1,3 +1,7 @@
 from django.db import models
 
-# Create your models here.
+class Job(models.Model):
+    #images
+    #property with a image field
+    images = models.ImageField(upload_to='images/')
+    summary = models.CharField(max_length=200)
