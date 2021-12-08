@@ -28,7 +28,22 @@
     <meta name="theme-color" content="#7952b3">
 
 
- 
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
 
 </head>
 
@@ -39,38 +54,20 @@
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Nefi Melgar</h1>
-                    <p class="lead text-muted">Hello, my name is Nefi I enjoy
-                        making apps and websites, I also enjoy playing piano. I'm not the guy at the picture.
+                    <h1 class="fw-light">Job Detail</h1>
+                    <p class="lead text-muted">
+                        {{ job.summary }}
                     </p>
+
+                    <img src="{{ job.image.url }}" alt="" height=300>
                     <p>
-                        <a href="mailto:melgar.nefi@gmail.com" class="btn btn-primary my-2">Email Me</a>
+                        <a href="{% url 'home' %}" class="btn btn-primary my-2">BACK</a>
                     </p>
-                    <img src="{% static 'nick.jpg' %}" alt="" height=300>
                 </div>
             </div>
         </section>
 
-        <div class="album py-5 bg-light">
-            <div class="container">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    {% for job in jobs.all %}
 
-                    <div class="col">
-                        <a href="{%url 'detail' job.id%}">
-                            <div class="card shadow-sm">
-                                <img src="{{ job.image.url }}" alt="image for job">
-                                <div class="card-body">
-                                    <p class="card-text">{{ job.summary }}</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    {% endfor %}
-                </div>
-
-            </div>
-        </div>
 
     </main>
 

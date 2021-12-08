@@ -5,3 +5,7 @@ class Job(models.Model):
     #property with a image field
     images = models.ImageField(upload_to='images/')
     summary = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.summary
+    
