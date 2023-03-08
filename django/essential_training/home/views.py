@@ -2,8 +2,14 @@ from django.shortcuts import render
 from django.shortcuts import HttpResponse
 from django.views.generic import TemplateView
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.views import LoginView, LogoutView
 
-# Create your views here
+class LogoutInterfaceView(LogoutView):
+    template_name = 'home/logout.html'
+
+class LoginInterfaceView(LoginView):
+    template_name = 'home/login.html'
+
 #everytime this function receives a request
 #it will return what's in tht return
 class HomeView(TemplateView):
