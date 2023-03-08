@@ -2,8 +2,8 @@
 
 {% block content %}
 
-<form action="{% url 'notes.new' %}" method="POST">{% csrf_token %}
-    {{ form }}
+<form method="POST">{% csrf_token %}
+    {{ form.as_p }}
 
     <button type="submit" class="btn btn-primary my-5">Submit</button>
 </form>
@@ -15,5 +15,7 @@
 </div>
 
 {% endif %}
+
+<a href="{% url 'notes.list' %}" class="btn btn-secondary">Cancel</a>
 
 {% endblock %}
