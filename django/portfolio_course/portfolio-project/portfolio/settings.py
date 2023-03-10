@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    #created apps
+    # created apps
     'jobs',
 ]
 
@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'jobs',
+        'NAME': 'portfoliodb',
         'USER': 'root',
         'PASSWORD': 'Hola123...',
         'HOST': 'localhost',
