@@ -1,0 +1,53 @@
+## Why do we need Testing
+- we dont want bugs
+- software testing catches bugs before they get to the field
+- multilevel approach to catch bugs
+
+## Levels of testing
+- Unit testing -> testing at the function Levels (individual functions)
+- component testing -> testing it at the library and compiled 
+    binary Levels (components are collections of functions)
+- system testing -> tests the external interfaces of a 
+    systems (can be collection of components or sub-systems)
+- performance testing -> testing done at sub-system and system levels to
+    verify timing and resource usages are acceptable
+
+## Unit Testing
+- test individual functions
+- a test should be written for each test case for a function (all positive and negative cases)
+- groups of tests can be combined into test suites for better organization
+- should execute in development environment rather than production
+- execution of the tests should be automated
+- unit test should run fast!
+
+## Common structure of unit test:
+ - Setup
+ - Action
+ - Assert
+
+## Test-Driven development
+- a process where the dev takes personal responsibility for the quality of their combined
+- unit test are written before the production combined
+- dont write all tests or production code at once
+- test and production code are both written together in small bits of functionality
+
+## Benefits of TDD
+- gives confidence to change the code
+- gives you immediate feedback
+- documents what the code is doing
+- drives good object oriented design by isolating functions and classes, breaking dependencies
+
+## TDD Work Flow
+- Red phase:
+    - writing a failing unit test
+- Green phase
+    - write just enough production code to make that test past
+- Refector phase
+    - refactor the unit test and the production code to make it 
+    clean (make sure it follows code standards and best practices)
+- Repeat until the feature is completed 
+
+## Uncle Bob's 3 laws of TDD
+- you may not write any production code until you have written a failing unit test
+- not write more of a unit test than is sufficient to fail, and to compiling is failing
+- not write more production code than is sufficient to pass the currently failing unit test
